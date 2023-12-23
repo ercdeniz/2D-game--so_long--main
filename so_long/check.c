@@ -101,7 +101,7 @@ void	exists_c_e_p(t_game *game)
 	game->map.position[0] = 0;
 	game->map.position[1] = 0;
 	found_c_e_p(game);
-	if (game->map.collectible[0] < 0)
+	if (game->map.collectible[0] <= 0)
 		return (ft_printf("%s\n", game->error.coin), ft_exit(game));
 	if (game->map.exit[0] != 1)
 		return (ft_printf("%s\n", game->error.exit), ft_exit(game));
